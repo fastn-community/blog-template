@@ -13,7 +13,7 @@ image: $assets.files.assets.hero-image.jpg
 
 -- end: my-ds.page.hero
 
---  ds.markdown:
+-- ds.markdown:
 
 Pema, SafetyWing’s Nomadic Content Creator, is paid to travel and document 10
 amazing coworking destinations from around the world. If you want to see her
@@ -24,7 +24,7 @@ src: $assets.files.assets.img.jpg
 
 -- ds.h2: Working remotely as a digital nomad in Honduras
 
---  ds.markdown:
+-- ds.markdown:
 
 Roatan is a dream for digital nomads. A pristine Caribbean island off the coast
 of Honduras, Roatan offers a relaxed pace of life combined with different
@@ -37,7 +37,7 @@ must-do for the sun-seeking nomad.
 
 -- ds.h2: Roatan Island as a digital nomad base
 
---  ds.markdown:
+-- ds.markdown:
 
 There's currently no digital nomad visa for Honduras, but there are 84 countries
 whose nationals can stay for 90 days without a visa. Those not on the list will
@@ -80,7 +80,7 @@ chocolate factories are also well worth the visit.
 
 -- ds.h2: Coworking in Roatan
 
---  ds.markdown:
+-- ds.markdown:
 
 It couldn’t have been more effortless training in the mornings, grabbing a local
 breakfast for $3 (baleadas), then heading to the Beach Desk coworking space to
@@ -105,7 +105,7 @@ src: $assets.files.assets.img4.jpg
 
 -- ds.h2: Wrap-Up: Life as a Digital Nomad in Roatan
 
---  ds.markdown:
+-- ds.markdown:
 
 While a carefree island life might not appeal to all, it’s an absolute dream for
 most. In Roatan, you’ll find the world-class Caribbean beaches and island
@@ -117,8 +117,6 @@ Wifi. In short, it’s a paradise, and one of my favorite locations so far to be
 a digital nomad. 
 
 -- end: my-ds.page
-
-
 
 
 
