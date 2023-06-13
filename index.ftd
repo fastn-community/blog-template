@@ -1,40 +1,352 @@
--- my-ds.page: Welcome to doc-site
+-- my-ds.page:
+blog: true
+sidebar: false
 
+-- my-ds.page.hero:
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- hero-with-image: Working remotely as a digital nomad in Honduras
+tag: Borderless living
+name: Pema Chinyam
+date: May 18
+time: 6 min
+image: $assets.files.assets.hero-image.jpg
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- end: my-ds.page.hero
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+--  ds.markdown:
 
--- ds.h3: 🚀 Fast Track 
+Pema, SafetyWing’s Nomadic Content Creator, is paid to travel and document 10
+amazing coworking destinations from around the world. If you want to see her
+diving adventures in Honduras, check out her YouTube video!
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- ds.image:
+src: $assets.files.assets.img.jpg
 
--- ds.h3: 🌟 Whats next?
+-- ds.h2: Working remotely as a digital nomad in Honduras
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/page/).
+--  ds.markdown:
 
--- ds.h3: 👀 Want to learn more?
+Roatan is a dream for digital nomads. A pristine Caribbean island off the coast
+of Honduras, Roatan offers a relaxed pace of life combined with different
+activities. The island is home to canopied jungles, white sandy beaches, and
+spectacular diving. Scuba diving shops line the shore at West End, and the
+freediving school regularly hosts world championships. Aside from its natural
+gifts, the Honduran locals are laid-back and welcoming, and the cost of living
+is not too high for remote workers. Altogether, coworking in Roatan is a
+must-do for the sun-seeking nomad.
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ds.h2: Roatan Island as a digital nomad base
 
+--  ds.markdown:
 
--- ds.h3: 🎯 Used by?
+There's currently no digital nomad visa for Honduras, but there are 84 countries
+whose nationals can stay for 90 days without a visa. Those not on the list will
+have to apply for a tourist visa. Make sure you have proof of onward travel to
+enter the country either way. There is also an international airport on the
+island, giving easy access to travelers.
 
-Our all documentation sites uses this `doc-site` theme.
+Honduras was the last stop on my Dream Job campaign trip, and my favorite. It
+was a chance to slow down and enjoy the little moments. I made a few good local
+friends, while also training intently to reach a new personal best in
+freediving.
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+I stayed in the fun, backpacker/diver area of Roatan, West End. The cabin I
+rented was surrounded by nature, just two minutes from the beach. I didn’t know
+it was the party zone, but it was very quiet in my accommodation. Perks of West
+End include easy access to nightlife, dive shops, coffee shops and the most
+diverse dining on the island. It’s also a lot cheaper than the fancier West
+Bay. The price of food and Airbnbs is always higher there, so I wouldn’t
+recommend it for a long-term stay. You can take a water taxi or collectivo taxi
+to that area for only a few dollars.
 
--- ds.h2: Learn fastn and become a pro?
+-- ds.image:
+src: $assets.files.assets.img2.jpg
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ds.markdown:
+
+`Activities in Roatan`
+
+Whether you’re into scuba diving, snorkeling or freediving, Roatan is one of the
+best places in the world to explore the ocean. The reefs just outside West Bay
+and West End would be the best most travelers have seen. I had my most
+productive week of freediving training there, with crystal clear waters and
+warm temperatures even in the off-season. I nearly always had sightings of big
+fish while I was training, which just goes to show how rich the marine life is
+there. 
+
+But if diving isn’t your thing, there are still gorgeous beaches on the Bay
+islands to explore, and jungle eco-adventures like zip lining. The local
+chocolate factories are also well worth the visit.
+
+-- ds.h2: Coworking in Roatan
+
+--  ds.markdown:
+
+It couldn’t have been more effortless training in the mornings, grabbing a local
+breakfast for $3 (baleadas), then heading to the Beach Desk coworking space to
+work.
+
+-- ds.image:
+src: $assets.files.assets.img3.jpeg
+
+-- ds.markdown:
+
+Along with fast Wifi and great amenities, Beach Desk had incredible views of the
+ocean. It was the perfect place for remote work on the island. The community is
+great and I was lucky to meet many expats and entrepreneurs there during my
+trip. In the evenings, either my freediving friends or coworking colleagues
+would have events organized. Networking and making friends was exceptionally
+easy here. On top of that, the locals were incredibly social, and I felt like I
+knew everyone on the main street after a week. I also never felt unsafe walking
+alone at night, and everyone I met was genuinely awesome.
+
+-- ds.image:
+src: $assets.files.assets.img4.jpg
+
+-- ds.h2: Wrap-Up: Life as a Digital Nomad in Roatan
+
+--  ds.markdown:
+
+While a carefree island life might not appeal to all, it’s an absolute dream for
+most. In Roatan, you’ll find the world-class Caribbean beaches and island
+lifestyle of your dreams. Central America, in general, has been rapidly gaining
+popularity amongst digital nomads since the pandemic. When you’re not out
+exploring the vibrant reefs or engaging in other year-round activities on the
+island, you can work a stone’s throw from the water with fast and reliable
+Wifi. In short, it’s a paradise, and one of my favorite locations so far to be
+a digital nomad. 
 
 -- end: my-ds.page
+
+
+
+
+
+
+
+
+
+
+
+
+-- component hero-with-image:
+caption title:
+string tag:
+string name:
+string date:
+string time:
+ftd.image-src image:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- hero-with-image-desktop: $hero-with-image.title
+tag: $hero-with-image.tag
+name: $hero-with-image.name
+date: $hero-with-image.date
+time: $hero-with-image.time
+image: $hero-with-image.image
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- hero-with-image-mobile: $hero-with-image.title
+tag: $hero-with-image.tag
+name: $hero-with-image.name
+date: $hero-with-image.date
+time: $hero-with-image.time
+image: $hero-with-image.image
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: hero-with-image
+
+
+
+
+
+
+
+
+
+
+-- component hero-with-image-desktop:
+caption title:
+string tag:
+string name:
+string date:
+string time:
+ftd.image-src image:
+
+-- ftd.row:
+padding-horizontal.px: 36
+padding-vertical.px: 64
+width: fill-container
+spacing: space-between
+
+-- ftd.column:
+width.fixed.px: 520
+spacing.fixed.px: 24
+
+-- ftd.text: $hero-with-image-desktop.tag
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.cta-danger.focused
+
+-- ftd.text: $hero-with-image-desktop.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: by
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $hero-with-image-desktop.name
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 24
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.assets.calendar.svg
+width: auto
+
+-- ftd.text: $hero-with-image-desktop.date
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.assets.clock.svg
+width: auto
+
+-- ftd.text: $hero-with-image-desktop.time
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $hero-with-image-desktop.image
+width.fixed.px: 600
+height.fixed.px: 400
+border-radius.px: 14
+border-width.px: 2
+border-color: $inherited.colors.cta-danger.focused
+
+-- end: ftd.row
+
+-- end: hero-with-image-desktop
+
+
+
+
+
+
+
+
+
+
+-- component hero-with-image-mobile:
+caption title:
+string tag:
+string name:
+string date:
+string time:
+ftd.image-src image:
+
+-- ftd.column:
+padding-vertical.px: 24
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.image:
+src: $hero-with-image-mobile.image
+width: fill-container
+height.fixed.px: 220
+border-radius.px: 14
+border-width.px: 2
+border-color: $inherited.colors.cta-danger.focused
+
+-- ftd.text: $hero-with-image-mobile.tag
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.cta-danger.focused
+
+-- ftd.text: $hero-with-image-mobile.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: by
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $hero-with-image-mobile.name
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 24
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.assets.calendar.svg
+width: auto
+
+-- ftd.text: $hero-with-image-mobile.date
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.assets.clock.svg
+width: auto
+
+-- ftd.text: $hero-with-image-mobile.time
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: hero-with-image-mobile
