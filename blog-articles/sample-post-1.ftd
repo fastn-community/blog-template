@@ -1,0 +1,17 @@
+-- import: fastn-community.github.io/blog-template/common
+-- import: fastn-community.github.io/blog-template/blog-authors/pema as author
+-- import: fastn-community.github.io/blog-template/blog-authors/yuri as author1
+
+-- common.post-meta meta: Working remotely as a digital nomad in Honduras
+tag: Borderless living
+author: $author.pema
+published-date: May 18
+published-time: 6 min
+post-image: $assets.files.assets.featured-1.jpg
+
+-- common.post-meta meta1: Unlocking the Potential of NFT Smart Contracts
+tag: Borderless living
+author: $author1.yuri
+published-date: February 1, 2023
+published-time: 7 min
+post-image: $assets.files.assets.hero-image.jpg

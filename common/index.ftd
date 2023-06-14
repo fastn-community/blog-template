@@ -1,0 +1,18 @@
+
+-- record author-meta:
+optional caption title:
+optional string profile:
+optional string company:
+optional string bio-url:
+optional ftd.image-src image:
+optional body body:
+
+-- record post-meta:
+optional caption title: 
+optional string published-date:
+optional string published-time:
+optional string tag:
+optional ftd.image-src post-image:
+optional body body:
+optional string post-url:
+optional author-meta author:

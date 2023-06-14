@@ -1,0 +1,23 @@
+-- import: fastn-community.github.io/blog-template/common 
+
+
+
+
+
+-- common.author-meta yuri: Yurii Shumak
+profile: UI Designer
+bio-url: blog-authors/yuri/
+image: $assets.files.assets.avatar.svg
+company: XYZ Pvt. Ltd.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. 
+
+-- my-ds.page: 
+full-width: true
+sidebar: false
+
+-- ds.author-bio: 
+author: $yuri
+
+-- end: my-ds.page

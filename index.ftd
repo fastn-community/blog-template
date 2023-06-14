@@ -1,15 +1,14 @@
+-- import: fastn-community.github.io/blog-template/common
+-- import: fastn-community.github.io/blog-template/blog-articles/sample-post-1
+
 -- my-ds.page:
 blog: true
 sidebar: false
 
 -- my-ds.page.hero:
 
--- hero-with-image: Working remotely as a digital nomad in Honduras
-tag: Borderless living
-name: Pema Chinyam
-date: May 18
-time: 6 min
-image: $assets.files.assets.hero-image.jpg
+-- featured-post:
+post-data: $sample-post-1.meta
 
 -- end: my-ds.page.hero
 
@@ -127,42 +126,72 @@ a digital nomad.
 
 
 
--- component hero-with-image:
+-- component featured-post:
+common.post-meta post-data:
+
+-- ftd.column:
+width: fill-container
+
+-- featured-post-card: $featured-post.post-data.title
+date: $featured-post.post-data.published-date
+time: $featured-post.post-data.published-time
+author: $featured-post.post-data.author
+image: $featured-post.post-data.post-image
+url: $featured-post.post-data.post-url
+tag: $featured-post.post-data.tag
+
+-- end: ftd.column
+
+-- end: featured-post
+
+
+
+
+
+
+
+
+
+
+-- component featured-post-card:
 caption title:
-string tag:
-string name:
-string date:
-string time:
-ftd.image-src image:
+optional string date:
+optional string time:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
 
 -- ftd.column:
 width: fill-container
 
 -- ftd.desktop:
 
--- hero-with-image-desktop: $hero-with-image.title
-tag: $hero-with-image.tag
-name: $hero-with-image.name
-date: $hero-with-image.date
-time: $hero-with-image.time
-image: $hero-with-image.image
+-- featured-post-card-desktop: $featured-post-card.title
+date: $featured-post-card.date
+time: $featured-post-card.time
+author: $featured-post-card.author
+image: $featured-post-card.image
+url: $featured-post-card.url
+tag: $featured-post-card.tag
 
 -- end: ftd.desktop
 
 -- ftd.mobile:
 
--- hero-with-image-mobile: $hero-with-image.title
-tag: $hero-with-image.tag
-name: $hero-with-image.name
-date: $hero-with-image.date
-time: $hero-with-image.time
-image: $hero-with-image.image
+-- featured-post-card-mobile: $featured-post-card.title
+date: $featured-post-card.date
+time: $featured-post-card.time
+author: $featured-post-card.author
+image: $featured-post-card.image
+url: $featured-post-card.url
+tag: $featured-post-card.tag
 
 -- end: ftd.mobile
 
 -- end: ftd.column
 
--- end: hero-with-image
+-- end: featured-post-card
 
 
 
@@ -173,13 +202,27 @@ image: $hero-with-image.image
 
 
 
--- component hero-with-image-desktop:
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component featured-post-card-desktop:
 caption title:
-string tag:
-string name:
-string date:
-string time:
-ftd.image-src image:
+optional string date:
+optional string time:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
 
 -- ftd.row:
 padding-horizontal.px: 36
@@ -191,12 +234,12 @@ spacing: space-between
 width.fixed.px: 520
 spacing.fixed.px: 24
 
--- ftd.text: $hero-with-image-desktop.tag
+-- ftd.text: $featured-post-card-desktop.tag
 role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.cta-danger.focused
 
--- ftd.text: $hero-with-image-desktop.title
+-- ftd.text: $featured-post-card-desktop.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
@@ -207,7 +250,7 @@ spacing.fixed.px: 8
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
--- ftd.text: $hero-with-image-desktop.name
+-- ftd.text: $featured-post-card-desktop.author.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -224,7 +267,8 @@ spacing.fixed.px: 12
 src: $assets.files.assets.calendar.svg
 width: auto
 
--- ftd.text: $hero-with-image-desktop.date
+-- ftd.text: $featured-post-card-desktop.date
+if: { featured-post-card-desktop.date != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -238,7 +282,8 @@ spacing.fixed.px: 12
 src: $assets.files.assets.clock.svg
 width: auto
 
--- ftd.text: $hero-with-image-desktop.time
+-- ftd.text: $featured-post-card-desktop.time
+if: { featured-post-card-desktop.time != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -249,7 +294,7 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- ftd.image:
-src: $hero-with-image-desktop.image
+src: $featured-post-card-desktop.image
 width.fixed.px: 600
 height.fixed.px: 400
 border-radius.px: 14
@@ -258,7 +303,7 @@ border-color: $inherited.colors.cta-danger.focused
 
 -- end: ftd.row
 
--- end: hero-with-image-desktop
+-- end: featured-post-card-desktop
 
 
 
@@ -269,13 +314,14 @@ border-color: $inherited.colors.cta-danger.focused
 
 
 
--- component hero-with-image-mobile:
+-- component featured-post-card-mobile:
 caption title:
-string tag:
-string name:
-string date:
-string time:
-ftd.image-src image:
+optional string date:
+optional string time:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
 
 -- ftd.column:
 padding-vertical.px: 24
@@ -283,19 +329,19 @@ width: fill-container
 spacing.fixed.px: 24
 
 -- ftd.image:
-src: $hero-with-image-mobile.image
+src: $featured-post-card-mobile.image
 width: fill-container
 height.fixed.px: 220
 border-radius.px: 14
 border-width.px: 2
 border-color: $inherited.colors.cta-danger.focused
 
--- ftd.text: $hero-with-image-mobile.tag
+-- ftd.text: $featured-post-card-mobile.tag
 role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.cta-danger.focused
 
--- ftd.text: $hero-with-image-mobile.title
+-- ftd.text: $featured-post-card-mobile.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
 
@@ -306,7 +352,7 @@ spacing.fixed.px: 8
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
--- ftd.text: $hero-with-image-mobile.name
+-- ftd.text: $featured-post-card-mobile.author.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -323,7 +369,8 @@ spacing.fixed.px: 12
 src: $assets.files.assets.calendar.svg
 width: auto
 
--- ftd.text: $hero-with-image-mobile.date
+-- ftd.text: $featured-post-card-mobile.date
+if: { featured-post-card-mobile.date != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -337,7 +384,8 @@ spacing.fixed.px: 12
 src: $assets.files.assets.clock.svg
 width: auto
 
--- ftd.text: $hero-with-image-mobile.time
+-- ftd.text: $featured-post-card-mobile.time
+if: { featured-post-card-mobile.time != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -347,4 +395,4 @@ color: $inherited.colors.text
 
 -- end: ftd.column
 
--- end: hero-with-image-mobile
+-- end: featured-post-card-mobile
