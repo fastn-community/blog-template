@@ -1,119 +1,40 @@
 -- import: fastn-community.github.io/blog-template/common
 -- import: fastn-community.github.io/blog-template/blog-articles/sample-post-1
 
+
+
+
+
 -- my-ds.page:
-blog: true
+full-width: true
 sidebar: false
 
--- my-ds.page.hero:
+-- search-card:
 
--- featured-post:
-post-data: $sample-post-1.meta
+-- topic: Topic
+topics: $common.topic-lists
 
--- end: my-ds.page.hero
+-- posts:
 
--- ds.markdown:
+-- post-card:
+post-data: $sample-post-1.meta1
 
-Pema, SafetyWing’s Nomadic Content Creator, is paid to travel and document 10
-amazing coworking destinations from around the world. If you want to see her
-diving adventures in Honduras, check out her YouTube video!
+-- post-card:
+post-data: $sample-post-1.meta2
 
--- ds.image:
-src: $assets.files.assets.img.jpg
+-- post-card:
+post-data: $sample-post-1.meta1
 
--- ds.h2: Working remotely as a digital nomad in Honduras
+-- post-card:
+post-data: $sample-post-1.meta2
 
--- ds.markdown:
+-- post-card:
+post-data: $sample-post-1.meta1
 
-Roatan is a dream for digital nomads. A pristine Caribbean island off the coast
-of Honduras, Roatan offers a relaxed pace of life combined with different
-activities. The island is home to canopied jungles, white sandy beaches, and
-spectacular diving. Scuba diving shops line the shore at West End, and the
-freediving school regularly hosts world championships. Aside from its natural
-gifts, the Honduran locals are laid-back and welcoming, and the cost of living
-is not too high for remote workers. Altogether, coworking in Roatan is a
-must-do for the sun-seeking nomad.
+-- post-card:
+post-data: $sample-post-1.meta2
 
--- ds.h2: Roatan Island as a digital nomad base
-
--- ds.markdown:
-
-There's currently no digital nomad visa for Honduras, but there are 84 countries
-whose nationals can stay for 90 days without a visa. Those not on the list will
-have to apply for a tourist visa. Make sure you have proof of onward travel to
-enter the country either way. There is also an international airport on the
-island, giving easy access to travelers.
-
-Honduras was the last stop on my Dream Job campaign trip, and my favorite. It
-was a chance to slow down and enjoy the little moments. I made a few good local
-friends, while also training intently to reach a new personal best in
-freediving.
-
-I stayed in the fun, backpacker/diver area of Roatan, West End. The cabin I
-rented was surrounded by nature, just two minutes from the beach. I didn’t know
-it was the party zone, but it was very quiet in my accommodation. Perks of West
-End include easy access to nightlife, dive shops, coffee shops and the most
-diverse dining on the island. It’s also a lot cheaper than the fancier West
-Bay. The price of food and Airbnbs is always higher there, so I wouldn’t
-recommend it for a long-term stay. You can take a water taxi or collectivo taxi
-to that area for only a few dollars.
-
--- ds.image:
-src: $assets.files.assets.img2.jpg
-
--- ds.markdown:
-
-`Activities in Roatan`
-
-Whether you’re into scuba diving, snorkeling or freediving, Roatan is one of the
-best places in the world to explore the ocean. The reefs just outside West Bay
-and West End would be the best most travelers have seen. I had my most
-productive week of freediving training there, with crystal clear waters and
-warm temperatures even in the off-season. I nearly always had sightings of big
-fish while I was training, which just goes to show how rich the marine life is
-there. 
-
-But if diving isn’t your thing, there are still gorgeous beaches on the Bay
-islands to explore, and jungle eco-adventures like zip lining. The local
-chocolate factories are also well worth the visit.
-
--- ds.h2: Coworking in Roatan
-
--- ds.markdown:
-
-It couldn’t have been more effortless training in the mornings, grabbing a local
-breakfast for $3 (baleadas), then heading to the Beach Desk coworking space to
-work.
-
--- ds.image:
-src: $assets.files.assets.img3.jpeg
-
--- ds.markdown:
-
-Along with fast Wifi and great amenities, Beach Desk had incredible views of the
-ocean. It was the perfect place for remote work on the island. The community is
-great and I was lucky to meet many expats and entrepreneurs there during my
-trip. In the evenings, either my freediving friends or coworking colleagues
-would have events organized. Networking and making friends was exceptionally
-easy here. On top of that, the locals were incredibly social, and I felt like I
-knew everyone on the main street after a week. I also never felt unsafe walking
-alone at night, and everyone I met was genuinely awesome.
-
--- ds.image:
-src: $assets.files.assets.img4.jpg
-
--- ds.h2: Wrap-Up: Life as a Digital Nomad in Roatan
-
--- ds.markdown:
-
-While a carefree island life might not appeal to all, it’s an absolute dream for
-most. In Roatan, you’ll find the world-class Caribbean beaches and island
-lifestyle of your dreams. Central America, in general, has been rapidly gaining
-popularity amongst digital nomads since the pandemic. When you’re not out
-exploring the vibrant reefs or engaging in other year-round activities on the
-island, you can work a stone’s throw from the water with fast and reliable
-Wifi. In short, it’s a paradise, and one of my favorite locations so far to be
-a digital nomad. 
+-- end: posts
 
 -- end: my-ds.page
 
@@ -133,8 +54,7 @@ common.post-meta post-data:
 width: fill-container
 
 -- featured-post-card: $featured-post.post-data.title
-date: $featured-post.post-data.published-date
-time: $featured-post.post-data.published-time
+timestamp: $featured-post.post-data.timestamp
 author: $featured-post.post-data.author
 image: $featured-post.post-data.post-image
 url: $featured-post.post-data.post-url
@@ -155,8 +75,7 @@ tag: $featured-post.post-data.tag
 
 -- component featured-post-card:
 caption title:
-optional string date:
-optional string time:
+optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
@@ -168,8 +87,7 @@ width: fill-container
 -- ftd.desktop:
 
 -- featured-post-card-desktop: $featured-post-card.title
-date: $featured-post-card.date
-time: $featured-post-card.time
+timestamp: $featured-post-card.timestamp
 author: $featured-post-card.author
 image: $featured-post-card.image
 url: $featured-post-card.url
@@ -180,8 +98,7 @@ tag: $featured-post-card.tag
 -- ftd.mobile:
 
 -- featured-post-card-mobile: $featured-post-card.title
-date: $featured-post-card.date
-time: $featured-post-card.time
+timestamp: $featured-post-card.timestamp
 author: $featured-post-card.author
 image: $featured-post-card.image
 url: $featured-post-card.url
@@ -202,31 +119,41 @@ tag: $featured-post-card.tag
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 -- component featured-post-card-desktop:
 caption title:
-optional string date:
-optional string time:
+optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
 optional string tag:
 
--- ftd.row:
+-- ftd.column:
 padding-horizontal.px: 36
-padding-vertical.px: 64
+padding-vertical.px: 54
+width: fill-container
+spacing.fixed.px: 36
+
+-- ftd.row:
+width.fixed.px: 92
+padding-vertical.px: 8
+padding-horizontal.px: 16
+align-content: center
+border-radius.px: 20
+spacing.fixed.px: 10
+background.solid: $inherited.colors.background.step-2
+link: index.html
+
+-- ftd.text: <
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- ftd.text: Back
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- ftd.row:
 width: fill-container
 spacing: space-between
 
@@ -267,27 +194,10 @@ spacing.fixed.px: 12
 src: $assets.files.assets.calendar.svg
 width: auto
 
--- ftd.text: $featured-post-card-desktop.date
-if: { featured-post-card-desktop.date != NULL }
+-- ftd.text: $featured-post-card-desktop.timestamp
+if: { featured-post-card-desktop.timestamp != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
-
--- end: ftd.row
-
--- ftd.row:
-align-content: center
-spacing.fixed.px: 12
-
--- ftd.image:
-src: $assets.files.assets.clock.svg
-width: auto
-
--- ftd.text: $featured-post-card-desktop.time
-if: { featured-post-card-desktop.time != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-
--- end: ftd.row
 
 -- end: ftd.row
 
@@ -295,13 +205,14 @@ color: $inherited.colors.text
 
 -- ftd.image:
 src: $featured-post-card-desktop.image
-width.fixed.px: 600
 height.fixed.px: 400
 border-radius.px: 14
 border-width.px: 2
 border-color: $inherited.colors.cta-danger.focused
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: featured-post-card-desktop
 
@@ -316,8 +227,7 @@ border-color: $inherited.colors.cta-danger.focused
 
 -- component featured-post-card-mobile:
 caption title:
-optional string date:
-optional string time:
+optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
@@ -369,23 +279,8 @@ spacing.fixed.px: 12
 src: $assets.files.assets.calendar.svg
 width: auto
 
--- ftd.text: $featured-post-card-mobile.date
-if: { featured-post-card-mobile.date != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-
--- end: ftd.row
-
--- ftd.row:
-align-content: center
-spacing.fixed.px: 12
-
--- ftd.image:
-src: $assets.files.assets.clock.svg
-width: auto
-
--- ftd.text: $featured-post-card-mobile.time
-if: { featured-post-card-mobile.time != NULL }
+-- ftd.text: $featured-post-card-mobile.timestamp
+if: { featured-post-card-mobile.timestamp != NULL }
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -396,3 +291,956 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- end: featured-post-card-mobile
+
+
+
+
+
+
+
+
+
+
+-- component post:
+common.post-meta meta:
+children container:
+
+-- ftd.column:
+width: fill-container
+
+-- article-card: $post.meta.title
+image: $post.meta.post-image
+author: $post.meta.author
+timestamp: $post.meta.timestamp
+tag: $post.meta.tag
+
+-- ftd.column:
+children: $post.container
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: post
+
+
+
+
+
+
+
+
+
+
+-- component article-card:
+caption title:
+optional string timestamp:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- article-card-desktop: $article-card.title
+timestamp: $article-card.timestamp
+author: $article-card.author
+image: $article-card.image
+url: $article-card.url
+tag: $article-card.tag
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- article-card-mobile: $article-card.title
+timestamp: $article-card.timestamp
+author: $article-card.author
+image: $article-card.image
+url: $article-card.url
+tag: $article-card.tag
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: article-card
+
+
+
+
+
+
+
+
+
+
+-- component article-card-desktop:
+caption title:
+optional string timestamp:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 36
+
+-- ftd.row:
+width.fixed.px: 92
+padding-vertical.px: 8
+padding-horizontal.px: 16
+align-content: center
+border-radius.px: 20
+spacing.fixed.px: 10
+background.solid: $inherited.colors.background.step-2
+link: index.html
+
+-- ftd.text: <
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- ftd.text: Back
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+
+-- ftd.column:
+width.fixed.px: 520
+spacing.fixed.px: 24
+
+-- ftd.text: $article-card-desktop.tag
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.cta-danger.focused
+
+-- ftd.text: $article-card-desktop.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: by
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $article-card-desktop.author.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 24
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.assets.calendar.svg
+width: auto
+
+-- ftd.text: $article-card-desktop.timestamp
+if: { article-card-desktop.timestamp != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $article-card-desktop.image
+height.fixed.px: 400
+border-radius.px: 14
+border-width.px: 2
+border-color: $inherited.colors.cta-danger.focused
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: article-card-desktop
+
+
+
+
+
+
+
+
+
+
+-- component article-card-mobile:
+caption title:
+optional string timestamp:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 36
+
+-- ftd.row:
+width.fixed.px: 92
+padding-vertical.px: 8
+padding-horizontal.px: 16
+align-content: center
+border-radius.px: 20
+spacing.fixed.px: 10
+background.solid: $inherited.colors.background.step-2
+link: index.html
+
+-- ftd.text: <
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- ftd.text: Back
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- ftd.column:
+spacing.fixed.px: 24
+
+-- ftd.image:
+src: $article-card-mobile.image
+height.fixed.px: 280
+border-radius.px: 14
+border-width.px: 2
+border-color: $inherited.colors.cta-danger.focused
+
+-- ftd.text: $article-card-mobile.tag
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.cta-danger.focused
+
+-- ftd.text: $article-card-mobile.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: by
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $article-card-mobile.author.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 24
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.assets.calendar.svg
+width: auto
+
+-- ftd.text: $article-card-mobile.timestamp
+if: { article-card-mobile.timestamp != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: article-card-mobile
+
+
+
+
+
+
+
+
+
+-- component posts:
+optional caption title:
+optional body body:
+children container:
+optional string sub-heading:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- ftd.row:
+children: $posts.container
+wrap: true
+spacing.fixed.px: 32
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+children: $posts.container
+spacing.fixed.px: 16
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: posts
+
+
+
+
+
+
+
+
+
+-- component post-card:
+common.post-meta post-data:
+
+-- post-card-ui: $post-card.post-data.title
+timestamp: $post-card.post-data.timestamp
+image: $post-card.post-data.post-image
+author: $post-card.post-data.author
+url: $post-card.post-data.post-url
+tag: $post-card.post-data.tag
+
+-- end: post-card
+
+
+
+
+
+
+
+
+
+
+-- component post-card-ui:
+caption title:
+optional string timestamp:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
+
+-- ftd.column:
+
+-- ftd.desktop:
+
+-- post-card-ui-desktop: $post-card-ui.title
+timestamp: $post-card-ui.timestamp
+image: $post-card-ui.image
+author: $post-card-ui.author
+url: $post-card-ui.url
+tag: $post-card-ui.tag
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- post-card-ui-mobile: $post-card-ui.title
+timestamp: $post-card-ui.timestamp
+image: $post-card-ui.image
+author: $post-card-ui.author
+url: $post-card-ui.url
+tag: $post-card-ui.tag
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: post-card-ui
+
+
+
+
+
+
+
+
+
+
+-- component post-card-ui-desktop:
+caption title:
+optional string timestamp:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
+boolean $mouse-in: false
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-2
+width.fixed.px: 357
+color: $inherited.colors.text
+margin-top.px: 24
+margin-bottom.px: 32
+spacing.fixed.px: 12
+border-radius.px: 20
+padding.px: 12
+background.solid if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-secondary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $post-card-ui-desktop.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $post-card-ui-desktop.mouse-in, v = false)
+border-width.px if { post-card-ui-desktop.mouse-in }: 1
+border-color if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-danger.focused
+
+-- ftd.image:
+src: $post-card-ui-desktop.image
+width: fill-container
+height.fixed.px: 220
+border-radius.px: 8
+border-width.px: 1
+border-color: $inherited.colors.cta-danger.focused
+link: $post-card-ui-desktop.url
+
+-- ftd.text: $post-card-ui-desktop.title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+link: $post-card-ui-desktop.url
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: by
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $post-card-ui-desktop.author.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+padding-vertical.px: 16
+padding-horizontal.px: 4
+spacing.fixed.px: 32
+border-top-width.px: 1
+border-top-color: $inherited.colors.border
+width: fill-container
+
+-- ftd.text: $post-card-ui-desktop.tag
+role: $inherited.types.copy-small
+style: bold
+color: $inherited.colors.cta-danger.focused
+
+-- ftd.row:
+border-right-width.px: 1
+border-right-color: $inherited.colors.border
+height.fixed.px: 60
+left.px: 130
+bottom.px: -4
+anchor: parent
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+padding-left.px: 8
+
+-- ftd.image:
+src: $assets.files.assets.calendar.svg
+width: auto
+
+-- ftd.text: $post-card-ui-desktop.timestamp
+if: { post-card-ui-desktop.timestamp != NULL }
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: post-card-ui-desktop
+
+
+
+
+
+
+
+
+
+
+-- component post-card-ui-mobile:
+caption title:
+optional string timestamp:
+optional common.author-meta author:
+optional ftd.image-src image:
+optional string url:
+optional string tag:
+boolean $mouse-in: false
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-2
+width.fixed.px: 357
+color: $inherited.colors.text
+margin-top.px: 24
+margin-bottom.px: 32
+spacing.fixed.px: 12
+border-radius.px: 20
+padding.px: 12
+background.solid if { post-card-ui-mobile.mouse-in }: $inherited.colors.cta-secondary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $post-card-ui-mobile.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $post-card-ui-mobile.mouse-in, v = false)
+border-width.px if { post-card-ui-mobile.mouse-in }: 1
+border-color if { post-card-ui-mobile.mouse-in }: $inherited.colors.cta-danger.focused
+
+-- ftd.image:
+src: $post-card-ui-mobile.image
+width: fill-container
+height.fixed.px: 220
+border-radius.px: 8
+border-width.px: 1
+border-color: $inherited.colors.cta-danger.focused
+link: $post-card-ui-mobile.url
+
+-- ftd.text: $post-card-ui-mobile.title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+link: $post-card-ui-mobile.url
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.text: by
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- ftd.text: $post-card-ui-mobile.author.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+padding-vertical.px: 16
+padding-horizontal.px: 4
+spacing.fixed.px: 32
+border-top-width.px: 1
+border-top-color: $inherited.colors.border
+width: fill-container
+
+-- ftd.text: $post-card-ui-mobile.tag
+role: $inherited.types.copy-small
+style: bold
+color: $inherited.colors.cta-danger.focused
+
+-- ftd.row:
+border-right-width.px: 1
+border-right-color: $inherited.colors.border
+height.fixed.px: 60
+left.px: 130
+bottom.px: -4
+anchor: parent
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+spacing.fixed.px: 12
+padding-left.px: 8
+
+-- ftd.image:
+src: $assets.files.assets.calendar.svg
+width: auto
+
+-- ftd.text: $post-card-ui-mobile.timestamp
+if: { post-card-ui-mobile.timestamp != NULL }
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+-- end: post-card-ui-mobile
+
+
+
+
+
+
+
+
+
+
+
+-- component search-card:
+
+-- ftd.column:
+padding.px: 12
+border-radius.px: 16
+background.solid: $inherited.colors.cta-tertiary.pressed
+
+-- ftd.text-input:
+placeholder: Search
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 250
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.cta-tertiary.pressed
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: search-card
+
+
+
+
+
+
+
+
+
+-- component topic:
+caption title:
+common.tags-list list topics:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- topic-desktop: $topic.title
+topics: $topic.topics
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- topic-mobile: $topic.title
+topics: $topic.topics
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: topic
+
+
+
+
+
+
+
+
+
+
+-- component topic-desktop:
+caption title:
+common.tags-list list topics:
+
+-- ftd.column:
+padding-vertical.px: 8
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.text: $topic-desktop.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.shadow
+
+-- ftd.row:
+spacing.fixed.px: 16
+wrap: true
+align-content: center
+
+-- topics-detail:
+$loop$: $topic-desktop.topics as $obj
+title: $obj.title
+tag-link: $obj.tag-link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: topic-desktop
+
+
+
+
+
+
+
+
+
+
+-- component topic-mobile:
+caption title:
+common.tags-list list topics:
+
+-- ftd.column:
+padding-vertical.px: 8
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.text: $topic-mobile.title
+role: $inherited.types.copy-large
+color: $inherited.colors.shadow
+
+-- ftd.row:
+spacing.fixed.px: 16
+wrap: true
+
+-- topics-detail:
+$loop$: $topic-mobile.topics as $obj
+title: $obj.title
+tag-link: $obj.tag-link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: topic-mobile
+
+
+
+
+
+
+
+
+
+
+-- component topics-detail:
+caption title:
+string tag-link:
+boolean $mouse-in: false
+
+-- ftd.row:
+spacing.fixed.px: 32
+background.solid: $inherited.colors.cta-secondary.base
+background.solid if { topics-detail.mouse-in }: $inherited.colors.cta-tertiary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $topics-detail.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $topics-detail.mouse-in, v = false)
+height: hug-content
+border-radius.px: 30
+padding-vertical.px: 12
+padding-horizontal.px: 12
+
+-- ftd.text: $topics-detail.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+link: $topics-detail.tag-link
+
+-- end: ftd.row
+
+-- end: topics-detail
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+string copyright: Copyright ©2022. Fastn Inc.
+optional ftd.image-src site-logo: 
+integer logo-width: $common.logo-width
+integer logo-height: $common.logo-height
+optional string site-url: $common.site-url
+optional string site-name: 
+optional body body:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- footer-desktop:
+copyright: $footer.copyright
+site-logo: $footer.site-logo
+logo-width: $footer.logo-width
+logo-height: $footer.logo-height
+site-url: $footer.site-url
+site-name: $footer.site-name
+body: $footer.body
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- footer-mobile:
+copyright: $footer.copyright
+site-logo: $footer.site-logo
+logo-width: $footer.logo-width
+logo-height: $footer.logo-height
+site-url: $footer.site-url
+site-name: $footer.site-name
+body: $footer.body
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+-- component footer-desktop:
+optional body body: 
+string copyright:
+optional ftd.image-src site-logo: 
+integer logo-width: 
+integer logo-height: 
+optional string site-url: 
+optional string site-name:
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+
+-- ftd.row:
+max-width.fixed.percent: 50
+width: fill-container
+align-content: center
+padding-vertical.px: 42
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+spacing.fixed.px: 16
+
+-- ftd.text:
+if: { footer-desktop.body != NULL }
+role: $inherited.types.copy-small
+
+$footer-desktop.body
+
+-- ftd.text-input:
+placeholder: Email
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 350
+type: text
+border-radius.px: 10
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.cta-tertiary.pressed
+color: $inherited.colors.text
+
+-- ftd.image:
+src: $assets.files.assets.instagram.svg
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- ftd.image:
+src: $assets.files.assets.twitter.svg
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
+color: $inherited.colors.text
+
+-- ftd.text: $footer-desktop.copyright
+role: $inherited.types.fine-print
+width: fill-container
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer-desktop
+
+
+
+
+
+
+
+
+
+
+-- component footer-mobile:
+optional body body:
+string copyright: 
+optional ftd.image-src site-logo: 
+integer logo-width: 
+integer logo-height:
+optional string site-url: 
+optional string site-name:
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+padding-horizontal.px: 24
+
+-- ftd.row:
+width: fill-container
+align-self: center
+padding-vertical.px: 42
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $assets.files.assets.instagram.svg
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- ftd.image:
+src: $assets.files.assets.twitter.svg
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
+color: $inherited.colors.text
+
+-- ftd.text: $footer-mobile.copyright
+role: $inherited.types.fine-print
+width: fill-container
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer-mobile

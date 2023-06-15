@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/set-2-ds as ds
 -- import: ds/common
--- import: fastn-community.github.io/footer
+-- import: fastn-community.github.io/blog-template as bgt
 
 
 -- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
@@ -38,13 +38,13 @@ github-icon: true
 
 -- ds.page.footer:
 
--- footer.social-sideline-footer:
-social: true
-site-logo: $site-logo
-site-url: index.html
-twitter-url: https://twitter.com/FifthTryHQ
-discord-url: https://discord.gg/bucrdvptYd
-copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
+-- bgt.footer:
+site-logo: $common.site-logo
+site-url: $common.site-url 
+logo-width: $common.logo-width
+logo-height: $common.logo-height
+
+I’m surprised you had the courage to take the responsibility yourself.
 
 -- end: ds.page.footer
 

@@ -1,17 +1,146 @@
 -- import: fastn-community.github.io/blog-template/common
+-- import: fastn-community.github.io/blog-template as blg-temp
 -- import: fastn-community.github.io/blog-template/blog-authors/pema as author
--- import: fastn-community.github.io/blog-template/blog-authors/yuri as author1
 
--- common.post-meta meta: Working remotely as a digital nomad in Honduras
-tag: Borderless living
+-- common.post-meta meta: Lorem ipsum dolor sit amet. Est voluptatem esse
+tag: Lorem ipsum
 author: $author.pema
-published-date: May 18
-published-time: 6 min
-post-image: $assets.files.assets.featured-1.jpg
+timestamp: May 18, 6 min
+post-image: $assets.files.assets.featured.svg
 
--- common.post-meta meta1: Unlocking the Potential of NFT Smart Contracts
-tag: Borderless living
-author: $author1.yuri
-published-date: February 1, 2023
-published-time: 7 min
-post-image: $assets.files.assets.hero-image.jpg
+-- common.post-meta meta1: Quo praesentium sapiente vel soluta assumenda et
+tag: Lorem ipsum
+author: $author.pema
+timestamp: May 18, 6 min
+post-image: $assets.files.assets.featured-1.jpg
+post-url: /blog-articles/sample-post-1/
+
+-- common.post-meta meta2: Eos libero natus est minima laudantium
+tag: Lorem ipsum
+author: $author.pema
+timestamp: May 18, 6 min
+post-image: $assets.files.assets.blog2.jpg
+post-url: /blog-articles/sample-post-1/
+
+
+
+
+
+-- my-ds.page:
+full-width: true
+sidebar: false
+
+-- blg-temp.post:
+meta: $meta
+
+-- ds.markdown:
+
+Lorem ipsum dolor sit amet. Est voluptatem esse ea repellat facere ut itaque
+labore ex quaerat error et distinctio reiciendis? Quo praesentium sapiente vel
+soluta assumenda et omnis doloremque est beatae voluptatem! 
+
+-- ds.image:
+src: $assets.files.assets.img.jpg
+
+-- ds.h2: Working remotely as a digital nomad in Honduras
+
+-- ds.markdown:
+
+Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias galisum! In
+laborum animi eum repellat ullam non temporibus delectus.Eos libero natus est
+minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid. Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias
+galisum! In laborum animi eum repellat ullam non temporibus delectus.Eos libero
+natus est minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid.
+
+
+-- ds.h2: Roatan Island as a digital nomad base
+
+-- ds.markdown:
+
+Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias galisum! In
+laborum animi eum repellat ullam non temporibus delectus.Eos libero natus est
+minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid. Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias
+galisum! 
+
+In laborum animi eum repellat ullam non temporibus delectus.Eos libero
+natus est minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid.
+
+Quo praesentium sapiente vel soluta assumenda et omnis doloremque est beatae
+voluptatem! Eum delectus dolorum et animi consectetur est asperiores tempore
+rem inventore nihil.Quo praesentium sapiente vel soluta assumenda et omnis
+doloremque est beatae voluptatem! Eum delectus dolorum et animi consectetur est
+asperiores tempore rem inventore nihil.Quo praesentium sapiente vel soluta
+assumenda et omnis doloremque est beatae voluptatem! Eum delectus dolorum et
+animi consectetur est asperiores tempore rem inventore nihil.
+
+-- ds.image:
+src: $assets.files.assets.img2.jpg
+
+-- ds.markdown:
+
+`Activities in Roatan`
+
+Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias galisum! In
+laborum animi eum repellat ullam non temporibus delectus.Eos libero natus est
+minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid. Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias
+galisum! 
+
+In laborum animi eum repellat ullam non temporibus delectus.Eos libero
+natus est minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid.
+
+-- ds.h2: Coworking in Roatan
+
+-- ds.markdown:
+
+In laborum animi eum repellat ullam non temporibus delectus.Eos libero
+natus est minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid.
+
+-- ds.image:
+src: $assets.files.assets.img3.jpeg
+
+-- ds.markdown:
+
+Along with fast Wifi and great amenities, Beach Desk had incredible views of the
+Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias galisum! In
+laborum animi eum repellat ullam non temporibus delectus.Eos libero natus est
+minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid. Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias
+galisum! Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias
+galisum! In laborum animi eum repellat ullam non temporibus delectus.Eos libero
+natus est minima laudantium hic dolor maxime et necessitatibus voluptatem. Sed
+accusantium magnam sed earum voluptatum quo mollitia voluptatem quo provident
+aliquid. Ad quam tenetur est repellendus dicta vel voluptas omnis ut alias
+galisum! 
+
+-- ds.image:
+src: $assets.files.assets.img4.jpg
+
+-- ds.h2: Wrap-Up: Life as a Digital Nomad in Roatan
+
+-- ds.markdown:
+
+Quo praesentium sapiente vel soluta assumenda et omnis doloremque est beatae
+voluptatem! Eum delectus dolorum et animi consectetur est asperiores tempore
+rem inventore nihil.Quo praesentium sapiente vel soluta assumenda et omnis
+doloremque est beatae voluptatem! Eum delectus dolorum et animi consectetur est
+asperiores tempore rem inventore nihil.Quo praesentium sapiente vel soluta
+assumenda et omnis doloremque est beatae voluptatem! Eum delectus dolorum et
+animi consectetur est asperiores tempore rem inventore nihil.
+
+-- end: my-ds.page
+
