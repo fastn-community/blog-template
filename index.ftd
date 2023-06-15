@@ -135,6 +135,8 @@ padding-horizontal.px: 36
 padding-vertical.px: 54
 width: fill-container
 spacing.fixed.px: 36
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- ftd.row:
 width: fill-container
@@ -158,12 +160,8 @@ link: $featured-post-card-desktop.url
 spacing.fixed.px: 8
 
 -- ftd.text: by
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- ftd.text: $featured-post-card-desktop.author.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -180,8 +178,6 @@ width: auto
 
 -- ftd.text: $featured-post-card-desktop.timestamp
 if: { featured-post-card-desktop.timestamp != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -222,6 +218,8 @@ optional string tag:
 padding-vertical.px: 24
 width: fill-container
 spacing.fixed.px: 24
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- ftd.image:
 src: $featured-post-card-mobile.image
@@ -232,7 +230,6 @@ border-width.px: 2
 border-color: $inherited.colors.cta-danger.focused
 
 -- ftd.text: $featured-post-card-mobile.tag
-role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.cta-danger.focused
 
@@ -244,12 +241,8 @@ color: $inherited.colors.text-strong
 spacing.fixed.px: 8
 
 -- ftd.text: by
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- ftd.text: $featured-post-card-mobile.author.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -266,8 +259,6 @@ width: auto
 
 -- ftd.text: $featured-post-card-mobile.timestamp
 if: { featured-post-card-mobile.timestamp != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -374,6 +365,8 @@ optional string tag:
 -- ftd.column:
 width: fill-container
 spacing.fixed.px: 36
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
 
 -- ftd.row:
 width.fixed.px: 92
@@ -386,12 +379,8 @@ background.solid: $inherited.colors.background.step-2
 link: index.html
 
 -- ftd.text: <
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
 
 -- ftd.text: Back
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
 
 -- end: ftd.row
 
@@ -404,7 +393,6 @@ width.fixed.px: 520
 spacing.fixed.px: 24
 
 -- ftd.text: $article-card-desktop.tag
-role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.cta-danger.focused
 
@@ -416,12 +404,8 @@ color: $inherited.colors.text-strong
 spacing.fixed.px: 8
 
 -- ftd.text: by
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- ftd.text: $article-card-desktop.author.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -438,8 +422,6 @@ width: auto
 
 -- ftd.text: $article-card-desktop.timestamp
 if: { article-card-desktop.timestamp != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -478,6 +460,8 @@ optional string tag:
 -- ftd.column:
 width: fill-container
 spacing.fixed.px: 36
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
 
 -- ftd.row:
 width.fixed.px: 92
@@ -490,12 +474,8 @@ background.solid: $inherited.colors.background.step-2
 link: index.html
 
 -- ftd.text: <
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
 
 -- ftd.text: Back
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
 
 -- end: ftd.row
 
@@ -510,7 +490,6 @@ border-width.px: 2
 border-color: $inherited.colors.cta-danger.focused
 
 -- ftd.text: $article-card-mobile.tag
-role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.cta-danger.focused
 
@@ -522,12 +501,8 @@ color: $inherited.colors.text-strong
 spacing.fixed.px: 8
 
 -- ftd.text: by
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- ftd.text: $article-card-mobile.author.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -544,8 +519,6 @@ width: auto
 
 -- ftd.text: $article-card-mobile.timestamp
 if: { article-card-mobile.timestamp != NULL }
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -685,6 +658,7 @@ boolean $mouse-in: false
 -- ftd.column:
 background.solid: $inherited.colors.background.step-2
 width.fixed.px: 357
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-top.px: 24
 margin-bottom.px: 32
@@ -715,12 +689,8 @@ link: $post-card-ui-desktop.url
 spacing.fixed.px: 8
 
 -- ftd.text: by
-role: $inherited.types.copy-small
-color: $inherited.colors.text
 
 -- ftd.text: $post-card-ui-desktop.author.title
-role: $inherited.types.copy-small
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -733,7 +703,6 @@ border-top-color: $inherited.colors.border
 width: fill-container
 
 -- ftd.text: $post-card-ui-desktop.tag
-role: $inherited.types.copy-small
 style: bold
 color: $inherited.colors.cta-danger.focused
 
@@ -758,8 +727,6 @@ width: auto
 
 -- ftd.text: $post-card-ui-desktop.timestamp
 if: { post-card-ui-desktop.timestamp != NULL }
-role: $inherited.types.copy-small
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -790,6 +757,7 @@ boolean $mouse-in: false
 -- ftd.column:
 background.solid: $inherited.colors.background.step-2
 width.fixed.px: 357
+role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-top.px: 24
 margin-bottom.px: 32
@@ -820,12 +788,8 @@ link: $post-card-ui-mobile.url
 spacing.fixed.px: 8
 
 -- ftd.text: by
-role: $inherited.types.copy-small
-color: $inherited.colors.text
 
 -- ftd.text: $post-card-ui-mobile.author.title
-role: $inherited.types.copy-small
-color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -838,7 +802,6 @@ border-top-color: $inherited.colors.border
 width: fill-container
 
 -- ftd.text: $post-card-ui-mobile.tag
-role: $inherited.types.copy-small
 style: bold
 color: $inherited.colors.cta-danger.focused
 
@@ -863,14 +826,13 @@ width: auto
 
 -- ftd.text: $post-card-ui-mobile.timestamp
 if: { post-card-ui-mobile.timestamp != NULL }
-role: $inherited.types.copy-small
-color: $inherited.colors.text
 
 -- end: ftd.row
 
 -- end: ftd.row
 
 -- end: ftd.column
+
 -- end: post-card-ui-mobile
 
 
@@ -1119,19 +1081,19 @@ optional string site-name:
 width: fill-container
 spacing: space-between
 align-content: center
+role: $inherited.types.copy-small
+color: $inherited.colors.text
 
 -- ftd.row:
 max-width.fixed.percent: 50
 width: fill-container
 align-content: center
 padding-vertical.px: 42
-color: $inherited.colors.text
 background.solid: $inherited.colors.background.base
 spacing.fixed.px: 16
 
 -- ftd.text:
 if: { footer-desktop.body != NULL }
-role: $inherited.types.copy-small
 
 $footer-desktop.body
 
@@ -1142,9 +1104,7 @@ padding-horizontal.px: 8
 width.fixed.px: 350
 type: text
 border-radius.px: 10
-role: $inherited.types.copy-small
 background.solid: $inherited.colors.cta-tertiary.pressed
-color: $inherited.colors.text
 
 -- ftd.image:
 src: $assets.files.assets.instagram.svg
@@ -1161,7 +1121,6 @@ align-self: center
 -- end: ftd.row
 
 -- ftd.row:
-color: $inherited.colors.text
 
 -- ftd.text: $footer-desktop.copyright
 role: $inherited.types.fine-print
@@ -1196,6 +1155,7 @@ width: fill-container
 spacing: space-between
 align-content: center
 padding-horizontal.px: 24
+color: $inherited.colors.text
 
 -- ftd.row:
 width: fill-container
@@ -1220,7 +1180,6 @@ align-self: center
 -- end: ftd.row
 
 -- ftd.row:
-color: $inherited.colors.text
 
 -- ftd.text: $footer-mobile.copyright
 role: $inherited.types.fine-print
