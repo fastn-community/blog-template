@@ -665,7 +665,7 @@ margin-bottom.px: 32
 spacing.fixed.px: 12
 border-radius.px: 20
 padding.px: 12
-background.solid if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-secondary.hover
+background.solid if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-tertiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $post-card-ui-desktop.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $post-card-ui-desktop.mouse-in, v = false)
 border-width.px if { post-card-ui-desktop.mouse-in }: 1
@@ -849,7 +849,7 @@ if: { post-card-ui-mobile.timestamp != NULL }
 -- ftd.column:
 padding.px: 12
 border-radius.px: 16
-background.solid: $inherited.colors.cta-tertiary.pressed
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.text-input:
 placeholder: Search
@@ -858,7 +858,7 @@ padding-horizontal.px: 8
 width.fixed.px: 250
 type: text
 role: $inherited.types.copy-small
-background.solid: $inherited.colors.cta-tertiary.pressed
+background.solid: $inherited.colors.background.step-1
 color: $inherited.colors.text
 
 -- end: ftd.column
@@ -990,7 +990,7 @@ boolean $mouse-in: false
 
 -- ftd.row:
 spacing.fixed.px: 32
-background.solid: $inherited.colors.cta-secondary.base
+background.solid: $inherited.colors.background.step-1
 background.solid if { topics-detail.mouse-in }: $inherited.colors.cta-tertiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $topics-detail.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $topics-detail.mouse-in, v = false)
@@ -1001,7 +1001,7 @@ padding-horizontal.px: 12
 
 -- ftd.text: $topics-detail.title
 role: $inherited.types.copy-small
-color: $inherited.colors.text
+color: $inherited.colors.shadow
 link: $topics-detail.tag-link
 
 -- end: ftd.row
@@ -1099,12 +1099,11 @@ $footer-desktop.body
 
 -- ftd.text-input:
 placeholder: Email
-padding-vertical.px: 4
-padding-horizontal.px: 8
+padding.px: 12
 width.fixed.px: 350
 type: text
 border-radius.px: 10
-background.solid: $inherited.colors.cta-tertiary.pressed
+background.solid: $inherited.colors.background.step-1
 
 -- ftd.image:
 src: $assets.files.assets.instagram.svg
