@@ -1,0 +1,24 @@
+-- import: fastn-community.github.io/blog-template/common 
+-- import: fastn-community.github.io/blog-template as blog
+
+
+
+
+
+-- common.author-meta pema: Pema Chinyam
+profile: UI Designer
+bio-url: blog-authors/pema/
+image: $assets.files.assets.avatar.svg
+company: XYZ Pvt. Ltd.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. 
+
+-- my-ds.page: 
+full-width: true
+sidebar: false
+
+-- blog.author-bio: 
+author: $pema
+
+-- end: my-ds.page
