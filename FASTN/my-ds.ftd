@@ -35,7 +35,7 @@ document-description: $page.document-description
 document-image: $page.document-image
 blog: $page.blog
 hero: $page.hero
-github-url: https://github.com/fastn-community/blog-template-1/
+github-url: https://github.com/fastn-community/blog-template/
 github-icon: true
 
 -- ds.page.footer:
