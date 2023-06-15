@@ -1,5 +1,5 @@
 -- import: fastn-community.github.io/blog-template/common
--- import: fastn-community.github.io/blog-template as blg-temp
+-- import: fastn-community.github.io/blog-template as blog
 -- import: fastn-community.github.io/blog-template/blog-authors/pema as author
 
 -- common.post-meta meta: Lorem ipsum dolor sit amet. Est voluptatem esse
@@ -31,7 +31,7 @@ post-url: /blog-articles/sample-post-1/
 full-width: true
 sidebar: false
 
--- blg-temp.post:
+-- blog.post:
 meta: $meta
 
 -- ds.markdown:
