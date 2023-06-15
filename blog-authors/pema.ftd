@@ -1,4 +1,5 @@
 -- import: fastn-community.github.io/blog-template/common 
+-- import: fastn-community.github.io/blog-template as blog
 
 
 
@@ -17,7 +18,7 @@ incididunt ut labore et dolore magna aliqua.
 full-width: true
 sidebar: false
 
--- ds.author-bio: 
+-- blog.author-bio: 
 author: $pema
 
 -- end: my-ds.page
