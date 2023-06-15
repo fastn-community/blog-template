@@ -1,4 +1,3 @@
-
 -- integer logo-width: 24
 
 -- integer logo-height: 24
@@ -8,16 +7,6 @@
 -- string site-url: index.html
 
 -- ftd.image-src site-logo: $assets.files.assets.ipsum-logo.svg
-
-
-
-
-
--- record social-media:
-ftd.image-src src:
-string link: /
-
--- social-media list share:
 
 
 

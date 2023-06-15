@@ -563,6 +563,7 @@ color: $inherited.colors.text
 
 
 
+
 -- component posts:
 optional caption title:
 optional body body:
@@ -596,6 +597,7 @@ spacing.fixed.px: 16
 -- end: ftd.column
 
 -- end: posts
+
 
 
 
@@ -880,7 +882,6 @@ color: $inherited.colors.text
 
 
 
-
 -- component search-card:
 
 -- ftd.column:
@@ -901,6 +902,7 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- end: search-card
+
 
 
 
