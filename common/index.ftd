@@ -7,7 +7,7 @@
 
 -- string site-url: index.html
 
--- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
+-- ftd.image-src site-logo: $assets.files.assets.ipsum-logo.svg
 
 
 

@@ -9,6 +9,9 @@
 full-width: true
 sidebar: false
 
+-- featured-post:
+post-data: $sample-post-1.meta
+
 -- search-card:
 
 -- topic: Topic
@@ -134,26 +137,6 @@ width: fill-container
 spacing.fixed.px: 36
 
 -- ftd.row:
-width.fixed.px: 92
-padding-vertical.px: 8
-padding-horizontal.px: 16
-align-content: center
-border-radius.px: 20
-spacing.fixed.px: 10
-background.solid: $inherited.colors.background.step-2
-link: index.html
-
--- ftd.text: <
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
-
--- ftd.text: Back
-role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
-
--- end: ftd.row
-
--- ftd.row:
 width: fill-container
 spacing: space-between
 
@@ -169,6 +152,7 @@ color: $inherited.colors.cta-danger.focused
 -- ftd.text: $featured-post-card-desktop.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text-strong
+link: $featured-post-card-desktop.url
 
 -- ftd.row:
 spacing.fixed.px: 8
@@ -209,6 +193,7 @@ height.fixed.px: 400
 border-radius.px: 14
 border-width.px: 2
 border-color: $inherited.colors.cta-danger.focused
+link: $featured-post-card-desktop.url
 
 -- end: ftd.row
 
@@ -763,7 +748,7 @@ anchor: parent
 -- ftd.row:
 align-content: center
 spacing.fixed.px: 12
-padding-left.px: 8
+padding-left.px: 32
 
 -- ftd.image:
 src: $assets.files.assets.calendar.svg

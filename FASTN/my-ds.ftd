@@ -1,28 +1,30 @@
--- import: fastn-community.github.io/set-2-ds as ds
--- import: ds/common
--- import: fastn-community.github.io/blog-template as bgt
+-- import: ds
+-- import: fastn-community.github.io/blog-template/common
+-- import: fastn-community.github.io/blog-template as blog
 
 
--- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
+
 
 
 -- component page:
 children wrapper:
 optional caption title:
 optional body body:
-boolean sidebar: true
+boolean sidebar: false
 ftd.ui list right-sidebar:
 optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
 optional string site-name: NULL
 ftd.image-src site-logo: $common.site-logo 
+optional string site-url: $common.site-url
 boolean full-width: false
 boolean blog: false
 ftd.ui list hero:
 
 -- ds.page: $page.title
 site-logo: $page.site-logo
+site-url: $page.site-url
 body: $page.body
 show-footer: true
 right-sidebar: $page.right-sidebar
@@ -33,12 +35,12 @@ document-description: $page.document-description
 document-image: $page.document-image
 blog: $page.blog
 hero: $page.hero
-github-url: https://github.com/fastn-community/set-1-ds/
+github-url: https://github.com/fastn-community/blog-template-1/
 github-icon: true
 
 -- ds.page.footer:
 
--- bgt.footer:
+-- blog.footer:
 site-logo: $common.site-logo
 site-url: $common.site-url 
 logo-width: $common.logo-width
