@@ -14,7 +14,7 @@ post-data: $sample-post-1.meta
 
 -- search-card:
 
--- topic: Topic
+-- topic: Topics
 topics: $common.topic-lists
 
 -- posts:
@@ -366,7 +366,6 @@ optional string tag:
 width: fill-container
 spacing.fixed.px: 36
 role: $inherited.types.copy-regular
-color: $inherited.colors.text-strong
 
 -- ftd.row:
 width.fixed.px: 92
@@ -375,8 +374,9 @@ padding-horizontal.px: 16
 align-content: center
 border-radius.px: 20
 spacing.fixed.px: 10
-background.solid: $inherited.colors.background.step-2
+background.solid: $inherited.colors.background.step-1
 link: index.html
+color: $inherited.colors.text
 
 -- ftd.text: <
 
@@ -402,6 +402,7 @@ color: $inherited.colors.text-strong
 
 -- ftd.row:
 spacing.fixed.px: 8
+color: $inherited.colors.text
 
 -- ftd.text: by
 
@@ -422,6 +423,7 @@ width: auto
 
 -- ftd.text: $article-card-desktop.timestamp
 if: { article-card-desktop.timestamp != NULL }
+color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -656,20 +658,20 @@ optional string tag:
 boolean $mouse-in: false
 
 -- ftd.column:
-background.solid: $inherited.colors.background.step-2
+background.solid: $inherited.colors.background.overlay
 width.fixed.px: 357
 role: $inherited.types.copy-small
-color: $inherited.colors.text
+color: $inherited.colors.cta-primary.text
 margin-top.px: 24
 margin-bottom.px: 32
 spacing.fixed.px: 12
 border-radius.px: 20
 padding.px: 12
-background.solid if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-tertiary.hover
+background.solid if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-secondary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $post-card-ui-desktop.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $post-card-ui-desktop.mouse-in, v = false)
 border-width.px if { post-card-ui-desktop.mouse-in }: 1
-border-color if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-danger.focused
+border-color if { post-card-ui-desktop.mouse-in }: $inherited.colors.cta-danger.border
 
 -- ftd.image:
 src: $post-card-ui-desktop.image
@@ -677,7 +679,7 @@ width: fill-container
 height.fixed.px: 220
 border-radius.px: 8
 border-width.px: 1
-border-color: $inherited.colors.cta-danger.focused
+border-color: $inherited.colors.cta-danger.border
 link: $post-card-ui-desktop.url
 
 -- ftd.text: $post-card-ui-desktop.title
@@ -704,7 +706,7 @@ width: fill-container
 
 -- ftd.text: $post-card-ui-desktop.tag
 style: bold
-color: $inherited.colors.cta-danger.focused
+color: $inherited.colors.cta-danger.text
 
 -- ftd.row:
 border-right-width.px: 1
@@ -915,11 +917,12 @@ common.tags-list list topics:
 -- ftd.column:
 padding-vertical.px: 8
 width: fill-container
-spacing.fixed.px: 24
+spacing.fixed.px: 12
 
 -- ftd.text: $topic-desktop.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.shadow
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+style: semi-bold
 
 -- ftd.row:
 spacing.fixed.px: 16
@@ -957,7 +960,7 @@ spacing.fixed.px: 24
 
 -- ftd.text: $topic-mobile.title
 role: $inherited.types.copy-large
-color: $inherited.colors.shadow
+color: $inherited.colors.text
 
 -- ftd.row:
 spacing.fixed.px: 16
@@ -991,7 +994,7 @@ boolean $mouse-in: false
 -- ftd.row:
 spacing.fixed.px: 32
 background.solid: $inherited.colors.background.step-1
-background.solid if { topics-detail.mouse-in }: $inherited.colors.cta-tertiary.hover
+background.solid if { topics-detail.mouse-in }: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $topics-detail.mouse-in, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $topics-detail.mouse-in, v = false)
 height: hug-content
@@ -1001,8 +1004,10 @@ padding-horizontal.px: 12
 
 -- ftd.text: $topics-detail.title
 role: $inherited.types.copy-small
-color: $inherited.colors.shadow
+color: $inherited.colors.cta-primary.text
+color if { topics-detail.mouse-in }: $inherited.colors.text-strong
 link: $topics-detail.tag-link
+style: semi-bold
 
 -- end: ftd.row
 

@@ -5,18 +5,20 @@ favicon: /-/fastn-community.github.io/blog-template/favicon.ico
 
 
 -- fastn.dependency: fastn-community.github.io/set-2-ds as ds
+-- fastn.dependency: fastn-community.github.io/blog-template-cs as cs
 
 
 -- fastn.auto-import: ds
+-- fastn.auto-import: cs
 -- fastn.auto-import: fastn-community.github.io/blog-template/FASTN/my-ds
 -- fastn.auto-import: fastn-community.github.io/blog-template/assets
 
 
 -- fastn.sitemap:
 
-# Home: /
+# Blog: /
+
+## Sample Post: /blog-articles/sample-post-1/
 
 # About: /
-
-# Blog: /
 
