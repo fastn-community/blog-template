@@ -612,7 +612,6 @@ optional string url:
 optional string tag:
 
 -- ftd.column:
-width: fill-container
 
 -- ftd.desktop:
 
