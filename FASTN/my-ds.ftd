@@ -16,7 +16,6 @@ optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
 optional string site-name: NULL
-ftd.color-scheme colors: $cs.main
 ftd.image-src site-logo: $common.site-logo 
 optional string site-url: $common.site-url
 boolean full-width: false
@@ -35,6 +34,7 @@ document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
 blog: $page.blog
+colors: $cs.main
 hero: $page.hero
 github-url: https://github.com/fastn-community/blog-template/
 github-icon: true
