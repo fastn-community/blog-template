@@ -564,7 +564,6 @@ spacing.fixed.px: 32
 -- ftd.column:
 children: $posts.container
 spacing.fixed.px: 16
-width: fill-container
 
 -- end: ftd.column
 
