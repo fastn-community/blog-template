@@ -386,7 +386,7 @@ width: fill-container
 spacing: space-between
 
 -- ftd.column:
-width.fixed.px: 520
+width.fixed.px: 480
 spacing.fixed.px: 24
 
 -- ftd.text: $article-card-desktop.tag
@@ -428,7 +428,7 @@ color: $inherited.colors.text
 
 -- ftd.image:
 src: $article-card-desktop.image
-height.fixed.px: 400
+height.fixed.px: 350
 border-radius.px: 14
 border-width.px: 2
 border-color: $inherited.colors.cta-danger.focused
