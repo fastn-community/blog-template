@@ -57,7 +57,7 @@ common.post-meta post-data:
 width: fill-container
 
 -- featured-post-card: $featured-post.post-data.title
-timestamp: $featured-post.post-data.timestamp
+timestamp: $featured-post.post-data.published-on
 author: $featured-post.post-data.author
 image: $featured-post.post-data.post-image
 url: $featured-post.post-data.post-url
@@ -284,7 +284,7 @@ width: fill-container
 -- article-card: $post.meta.title
 image: $post.meta.post-image
 author: $post.meta.author
-timestamp: $post.meta.timestamp
+timestamp: $post.meta.published-on
 tag: $post.meta.tag
 
 -- ftd.column:
@@ -586,7 +586,7 @@ spacing.fixed.px: 16
 common.post-meta post-data:
 
 -- post-card-ui: $post-card.post-data.title
-timestamp: $post-card.post-data.timestamp
+timestamp: $post-card.post-data.published-on
 image: $post-card.post-data.post-image
 author: $post-card.post-data.author
 url: $post-card.post-data.post-url
