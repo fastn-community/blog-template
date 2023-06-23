@@ -68,6 +68,13 @@ author: $featured-post.post-data.author
 image: $featured-post.post-data.post-image
 url: $featured-post.post-data.post-url
 tag: $featured-post.post-data.tag
+info: $featured-post.info
+cta-primary: $featured-post.cta-primary
+cta-primary-url: $featured-post.cta-primary-url
+cta-secondary: $featured-post.cta-secondary
+cta-secondary-url: $featured-post.cta-secondary-url
+link: $featured-post.link
+
 
 -- end: ftd.column
 
@@ -87,8 +94,15 @@ caption title:
 optional string timestamp:
 optional common.author-meta author:
 optional ftd.image-src image:
-optional string url:
+optional string link:
 optional string tag:
+optional string info:
+optional string cta-primary: 
+optional string cta-primary-url:
+optional string cta-secondary: 
+optional string cta-secondary-url:
+optional string url:
+optional boolean $cta-hover: false
 
 -- ftd.column:
 width: fill-container
@@ -283,6 +297,11 @@ if: { featured-post-card-mobile.timestamp != NULL }
 -- component post:
 common.post-meta meta:
 children container:
+optional string previous-cta-txt: Back to blog
+optional string previous-cta-url:
+optional string share-txt: Share
+optional boolean sidebar: false
+ftd.ui list right-sidebar:
 
 -- ftd.column:
 width: fill-container
@@ -392,10 +411,12 @@ width: fill-container
 spacing: space-between
 
 -- ftd.column:
+width if { article-card-desktop.image == NULL }: fill-container
 width.fixed.px: 480
 spacing.fixed.px: 24
 
 -- ftd.text: $article-card-desktop.tag
+if: { article-card-desktop.tag != NULL }
 style: bold
 color: $inherited.colors.cta-danger.focused
 
@@ -417,6 +438,7 @@ color: $inherited.colors.text
 spacing.fixed.px: 24
 
 -- ftd.row:
+if: { article-card-desktop.timestamp != NULL }
 align-content: center
 spacing.fixed.px: 12
 
@@ -433,6 +455,7 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- ftd.image:
+if: { article-card-desktop.image != NULL }
 src: $article-card-desktop.image
 height.fixed.px: 350
 border-radius.px: 14
@@ -490,6 +513,7 @@ color: $inherited.colors.text
 spacing.fixed.px: 24
 
 -- ftd.image:
+if: { article-card-mobile.image != NULL }
 src: $article-card-mobile.image
 height.fixed.px: 280
 border-radius.px: 14
@@ -498,6 +522,7 @@ border-width.px: 2
 border-color: $inherited.colors.cta-danger.border
 
 -- ftd.text: $article-card-mobile.tag
+if: { article-card-mobile.tag != NULL }
 style: bold
 color: $inherited.colors.cta-danger.text
 
@@ -597,6 +622,7 @@ image: $post-card.post-data.post-image
 author: $post-card.post-data.author
 url: $post-card.post-data.post-url
 tag: $post-card.post-data.tag
+body: $post-card.post-data.body
 
 -- end: post-card
 
@@ -616,6 +642,7 @@ optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
 optional string tag:
+optional body body:
 
 -- ftd.column:
 
