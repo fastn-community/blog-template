@@ -4,7 +4,7 @@
 favicon: /-/fastn-community.github.io/blog-template/favicon.ico
 
 
--- fastn.dependency: fastn-community.github.io/set-2-ds as ds
+-- fastn.dependency: fastn-community.github.io/midnight-storm as ds
 -- fastn.dependency: fastn-community.github.io/blog-template-cs as cs
 
 
@@ -16,9 +16,9 @@ favicon: /-/fastn-community.github.io/blog-template/favicon.ico
 
 -- fastn.sitemap:
 
-# Blog: /
+# Blog: index.html
 
 ## Sample Post: /blog-articles/sample-post-1/
 
-# About: /
+# About: index.html
 
