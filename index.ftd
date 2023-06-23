@@ -52,6 +52,12 @@ post-data: $sample-post-1.meta2
 
 -- component featured-post:
 common.post-meta post-data:
+optional string cta-primary: 
+optional string cta-primary-url:
+optional string cta-secondary: 
+optional string cta-secondary-url:
+optional string info:
+optional string link:
 
 -- ftd.column:
 width: fill-container
