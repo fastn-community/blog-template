@@ -337,6 +337,7 @@ optional common.author-meta author:
 optional ftd.image-src image:
 optional string url:
 optional string tag:
+children container:
 
 -- ftd.column:
 width: fill-container
