@@ -96,6 +96,7 @@ optional common.author-meta author:
 optional ftd.image-src image:
 optional string link:
 optional string tag:
+optional body body:
 optional string info:
 optional string cta-primary: 
 optional string cta-primary-url:
