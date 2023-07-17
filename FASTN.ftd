@@ -4,11 +4,10 @@
 favicon: /-/fastn-community.github.io/blog-template/favicon.ico
 
 
--- fastn.dependency: fastn-community.github.io/midnight-storm as ds
+-- fastn.dependency: fastn-community.github.io/midnight-rush
 -- fastn.dependency: fastn-community.github.io/blog-template-cs as cs
 -- fastn.dependency: fastn-community.github.io/bling
 
--- fastn.auto-import: ds
 -- fastn.auto-import: cs
 -- fastn.auto-import: fastn-community.github.io/blog-template/FASTN/ds
 -- fastn.auto-import: fastn-community.github.io/blog-template/assets

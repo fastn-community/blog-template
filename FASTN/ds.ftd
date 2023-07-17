@@ -1,7 +1,8 @@
--- import: ds
+-- import: fastn-community.github.io/midnight-rush as ds
+export: h0, h1, h2, h3, markdown, code, image, link, link-group, toc-title
 -- import: fastn-community.github.io/blog-template/common
--- import: fastn-community.github.io/blog-template as blog
-
+-- import: fastn-community.github.io/blog-template
+export: featured-post, post, posts, post-card, search-card, topic,  author-bio, footer
 
 
 
@@ -41,13 +42,13 @@ github-icon: true
 
 -- ds.page.footer:
 
--- blog.footer:
+-- ds.footer:
 site-logo: $common.site-logo
 site-url: $common.site-url 
-logo-width: $common.logo-width
-logo-height: $common.logo-height
+;;logo-width: $common.logo-width
+;;logo-height: $common.logo-height
 
-I’m surprised you had the courage to take the responsibility yourself.
+;;I’m surprised you had the courage to take the responsibility yourself.
 
 -- end: ds.page.footer
 
