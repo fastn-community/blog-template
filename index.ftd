@@ -5,7 +5,7 @@
 
 
 
--- my-ds.page: Blog
+-- ds.page: Blog
 sidebar: false
 full-width: true
 
@@ -43,7 +43,7 @@ post-data: $sample-post-1.meta2
 
 -- end: posts
 
--- end: my-ds.page
+-- end: ds.page
 
 
 

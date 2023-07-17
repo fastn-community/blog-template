@@ -27,7 +27,7 @@ post-url: blog-articles/sample-post-1/
 
 
 
--- my-ds.page:
+-- ds.page:
 full-width: true
 sidebar: false
 
@@ -142,4 +142,4 @@ asperiores tempore rem inventore nihil.Quo praesentium sapiente vel soluta
 assumenda et omnis doloremque est beatae voluptatem! Eum delectus dolorum et
 animi consectetur est asperiores tempore rem inventore nihil.
 
--- end: my-ds.page
+-- end: ds.page

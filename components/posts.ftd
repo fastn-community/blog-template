@@ -4,10 +4,10 @@
 
 
 
--- my-ds.page: Posts
+-- ds.page: Posts
 sidebar: true
 
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.toc-title: On this page
 
@@ -17,9 +17,9 @@ cta: components/posts/#creating-post-list-page
 -- ds.link-group: Understand code snippet
 cta: components/posts/#understand-above-code-snippet
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 -- ds.h2: Creating posts list page
 id: creating-post-list-page
@@ -72,7 +72,7 @@ It imports `sample-post`and its all details `/blog-articles/` folder.
 
 -- end: collapse.collapse
 
--- collapse.collapse: `-- my-ds.page:`
+-- collapse.collapse: `-- ds.page:`
 remove-gap: true
 
 Its midnight-rush default page component.
@@ -96,4 +96,4 @@ remove-gap: true
 The `blog.post-card` component shows your post image at the top then shows the
 title of the post and other post details. [see our blog page](index.html)
 
--- end: my-ds.page
+-- end: ds.page

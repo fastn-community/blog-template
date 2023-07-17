@@ -14,11 +14,11 @@ company: XYZ Pvt. Ltd.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. 
 
--- my-ds.page: 
+-- ds.page: 
 full-width: true
 sidebar: false
 
 -- blog.author-bio: 
 author: $pema
 
--- end: my-ds.page
+-- end: ds.page
