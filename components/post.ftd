@@ -5,7 +5,7 @@
 -- ds.page: post
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use blog-template template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
-document-image: https://fastn-community.github.io/blog-template/-/fastn-community.github.io/blog-template/static/blog-template-og-image.jpg
+document-image: https://fastn-community.github.io/blog-template/-/fastn-community.github.io/blog-template/assets/blog-template-og-image.jpg
 sidebar: true
 
 -- ds.page.right-sidebar:
@@ -217,7 +217,7 @@ It's used add body content to the post meta component.
 remove-gap: true
 
 It's used to add post timestamp e.g. 1st Jan 22, 2023 at 10:02 pm. This is
-static property you need to add date and time manually.
+assets property you need to add date and time manually.
 
 -- end: collapse.collapse
 
