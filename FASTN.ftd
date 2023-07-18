@@ -5,17 +5,31 @@ favicon: /-/fastn-community.github.io/blog-template/favicon.ico
 
 
 -- fastn.dependency: fastn-community.github.io/midnight-rush
--- fastn.dependency: fastn-community.github.io/blog-template-cs as cs
+-- fastn.dependency: fastn-community.github.io/blog-template-cs
 -- fastn.dependency: fastn-community.github.io/bling
+-- fastn.dependency: fastn.com
 
--- fastn.auto-import: cs
+-- fastn.auto-import: fastn
 -- fastn.auto-import: fastn-community.github.io/blog-template/FASTN/ds
 -- fastn.auto-import: fastn-community.github.io/blog-template/assets
 
 -- fastn.sitemap:
 
-# Home: index.html
+# Blog: index.html
 
-# Blog: /components/posts/
-- Posts: /components/posts/
-
+# Doc: /components/
+- Components: /components/
+  - author-bio: /components/author-bio/
+  skip: true
+  - featured-post: /components/featured-post/
+  skip: true
+  - post: /components/post/
+  skip: true
+  - post-card: /components/post-card/
+  skip: true
+  - posts: /components/posts/
+  skip: true
+  - search-card: /components/search-card/
+  skip: true
+  - topic: /components/topic/
+  skip: true

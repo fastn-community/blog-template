@@ -1,11 +1,9 @@
--- import: fastn-community.github.io/midnight-rush as ds
-export: h0, h1, h2, h3, markdown, code, image, link, link-group, toc-title
 -- import: fastn-community.github.io/blog-template/common
+-- import: fastn-community.github.io/blog-template-cs
 -- import: fastn-community.github.io/blog-template 
 export: featured-post, post, posts, post-card, footer, search-card, topic, author-bio
-
-
-
+-- import: fastn-community.github.io/midnight-rush as ds
+export: h0, h1, h2, h3, markdown, code, image, link, link-group, toc-title, rendered
 
 
 -- component page:
@@ -36,7 +34,7 @@ document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
 blog: $page.blog
-colors: $cs.main
+colors: $blog-template-cs.main
 hero: $page.hero
 github-url: https://github.com/fastn-community/blog-template/
 github-icon: true
