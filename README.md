@@ -3,18 +3,17 @@
 [blog-template](https://fastn-community.github.io/blog-template/) will help you create
 a beautiful documentation site in no time.
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+It provides out-of-the-box documentation features that can be used to create blog(personal website, blog, etc).
 
 # Preview
 
-![blog-template](.github/assets/blog-template-example-dark.jpg)
+![blog-template](.github/assets/blog-template.jpg)
 
 ## Get Rolling
 
 [Click here](https://fastn-community.github.io/blog-template/) to learn how to use this template.
 
-# [Dive into the Docs](https://fastn-community.github.io/blog-template/)
+# [Dive into the Docs](https://fastn-community.github.io/blog-template/components)
 
 # See it in Action!
 
