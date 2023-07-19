@@ -1,5 +1,3 @@
--- import: fastn.com/ftd/utils as appendix
-
 -- ds.page: Blog Template Components
 document-title: fastn Blog Template Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use blog-template template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -15,7 +13,7 @@ them.
 We have listed all blog-template components below, click on a component name to
 learn more about it.
 
--- appendix.letter-stack:
+-- ds.letter-stack:
 height.fixed.px if { ftd.device != "mobile" }: 1000
 height: fill-container
 contents-a: $letter-contents-a
@@ -37,43 +35,43 @@ contents-t: $letter-contents-t
 
 ;; APPENDIX ------------------------------------------------------------
 
--- appendix.letter-data list letter-contents-a:
+-- ds.letter-data list letter-contents-a:
 
--- appendix.letter-data: author-bio
+-- ds.letter-data: author-bio
 link: components/author-bio/
 
 -- end: letter-contents-a
 
--- appendix.letter-data list letter-contents-f:
+-- ds.letter-data list letter-contents-f:
 
--- appendix.letter-data: featured-post
+-- ds.letter-data: featured-post
 link: components/featured-post/
 
 -- end: letter-contents-f
 
--- appendix.letter-data list letter-contents-p:
+-- ds.letter-data list letter-contents-p:
 
--- appendix.letter-data: post
+-- ds.letter-data: post
 link: components/post/
 
--- appendix.letter-data: post-card
+-- ds.letter-data: post-card
 link: components/post-card/
 
--- appendix.letter-data: posts
+-- ds.letter-data: posts
 link: components/posts/
 
 -- end: letter-contents-p
 
--- appendix.letter-data list letter-contents-s:
+-- ds.letter-data list letter-contents-s:
 
--- appendix.letter-data: search-card
+-- ds.letter-data: search-card
 link: components/search-card/
 
 -- end: letter-contents-s
 
--- appendix.letter-data list letter-contents-t:
+-- ds.letter-data list letter-contents-t:
 
--- appendix.letter-data: topic
+-- ds.letter-data: topic
 link: components/topic/
 
 -- end: letter-contents-t

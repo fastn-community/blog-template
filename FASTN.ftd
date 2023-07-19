@@ -7,7 +7,6 @@ favicon: /-/fastn-community.github.io/blog-template/favicon.ico
 -- fastn.dependency: fastn-community.github.io/midnight-storm
 -- fastn.dependency: fastn-community.github.io/blog-template-cs
 -- fastn.dependency: fastn-community.github.io/bling
--- fastn.dependency: fastn.com
 
 -- fastn.auto-import: fastn
 -- fastn.auto-import: fastn-community.github.io/blog-template/FASTN/ds
@@ -17,8 +16,8 @@ favicon: /-/fastn-community.github.io/blog-template/favicon.ico
 
 # Blog: index.html
 
-# Doc: /components/
-- Components: /components/
+# Docs: /components/
+- Docs Components: /components/
   - author-bio: /components/author-bio/
   skip: true
   - featured-post: /components/featured-post/

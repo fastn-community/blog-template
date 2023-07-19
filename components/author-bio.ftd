@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/blog-template/blog-authors/pema as author
+-- import: fastn-community.github.io/blog-template/blog-authors/pema
 -- import: fastn-community.github.io/blog-template/components
 
 -- ds.page: author-bio
@@ -34,12 +34,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua.
 
 \-- ds.author-bio: 
-author: $pema
+author: $pema.pema
 
 -- ds.rendered.output:
 
 -- ds.author-bio: 
-author: $author.pema
+author: $pema.pema
 
 -- end: ds.rendered.output
 
@@ -49,7 +49,7 @@ author: $author.pema
 lang: ftd
 
 \-- ds.author-bio: 
-author: $pema
+author: $pema.pema
 
 -- ds.h3: Properties of `author-bio` component
 

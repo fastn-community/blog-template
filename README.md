@@ -1,13 +1,13 @@
 # Overview
 
 [blog-template](https://fastn-community.github.io/blog-template/) will help you create
-a beautiful documentation site in no time.
+a beautiful blog site in no time.
 
-It provides out-of-the-box documentation features that can be used to create blog(personal website, blog, etc).
+It provides out-of-the-box blog features that can be used to create blog(personal website, blog, etc).
 
 # Preview
 
-![blog-template](.github/assets/blog-template.jpg)
+![blog-template](.github/assets/blog-template-og-image.jpg)
 
 ## Get Rolling
 
