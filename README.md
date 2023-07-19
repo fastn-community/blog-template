@@ -7,7 +7,7 @@ It provides out-of-the-box blog features that can be used to create blog(persona
 
 # Preview
 
-![blog-template](.github/assets/blog-template-og-image.jpg)
+![blog-template](assets/blog-template-og-image.jpg)
 
 ## Get Rolling
 
