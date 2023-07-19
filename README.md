@@ -1,25 +1,24 @@
 # Overview
 
-[doc-site](https://fastn-community.github.io/doc-site/) will help you create
-a beautiful documentation site in no time.
+[blog-template](https://fastn-community.github.io/blog-template/) will help you create
+a beautiful blog site in no time.
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+It provides out-of-the-box blog features that can be used to create blog(personal website, blog, etc).
 
 # Preview
 
-![doc-site](.github/assets/doc-site-example-dark.jpg)
+![blog-template](.github/assets/blog-template-og-image.jpg)
 
 ## Get Rolling
 
-[Click here](https://fastn-community.github.io/doc-site/) to learn how to use this template.
+[Click here](https://fastn-community.github.io/blog-template/) to learn how to use this template.
 
-# [Dive into the Docs](https://fastn-community.github.io/doc-site/)
+# [Dive into the Docs](https://fastn-community.github.io/blog-template/components)
 
 # See it in Action!
 
 Explore websites and projects that have utilized this component/template 
-**[here](https://fastn-community.github.io/doc-site/#dart-used-by)** for
+**[here](https://fastn-community.github.io/blog-template/#dart-used-by)** for
 inspiration.
 
 ## [Changelog](Changelog.md)

@@ -1,6 +1,6 @@
--- integer logo-width: 24
+-- integer logo-width: 84
 
--- integer logo-height: 24
+-- integer logo-height: 84
 
 -- string site-name: SET 2 DS
 
@@ -67,18 +67,18 @@ optional author-meta author:
 
 -- social-media:
 link: /
-src: $assets.files.static.meta.svg
+src: $assets.files.assets.meta.svg
 
 -- social-media: 
 link: /
-src: $assets.files.static.figma.svg
+src: $assets.files.assets.figma.svg
 
 -- social-media:
 link: /
-src: $assets.files.static.google.svg
+src: $assets.files.assets.google.svg
 
 -- social-media: 
 link: /
-src: $assets.files.static.ball.svg
+src: $assets.files.assets.ball.svg
 
 -- end: share-links
