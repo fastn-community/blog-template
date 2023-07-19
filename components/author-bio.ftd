@@ -1,7 +1,6 @@
 -- import: fastn-community.github.io/blog-template/blog-authors/pema as author
 -- import: fastn-community.github.io/blog-template/components
 
-
 -- ds.page: author-bio
 document-title: fastn blog-template Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use blog-template template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.

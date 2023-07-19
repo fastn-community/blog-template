@@ -1,7 +1,6 @@
 -- import: fastn-community.github.io/blog-template/components
 -- import: fastn-community.github.io/blog-template/blog-articles/sample-post-1 
 
-
 -- ds.page: featured-post
 document-title: fastn blog Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use blog-template template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -41,7 +40,6 @@ post-data: $sample-post-1.meta
 post-data: $sample-post-1.meta
 
 -- end: ds.rendered.output
-
 
 -- end: ds.rendered
 
